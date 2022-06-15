@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Objects</title>
+
+</head>
+<body>
+
+
+	<h1>Shahnawaz Peerzade</h1>
+	<img src="pic.jpeg">
+
+	<h1 id ="object1"></h1>
+
+
+
+	<script type="text/javascript">
+		const Student = {name:"Shahnawaz Peerzade",age:"24", usn:"2BL18CV424", college:"BLDEACET College",branch:"Civil Engineering"};
+		document.getElementById("object1").innerHTML = "The Student name is " + Student.name + " His age is " + Student.age + " Usn of student is " + Student.usn + " He is from " + Student.college + " Department of " + Student.branch;
+	</script>
+
+
+		<h1></h1>
+
+
+
+		<h1 id ="object4"></h1>
+
+	<script type="text/javascript">
+		const parents = {name:"Saleem Peerzade", contact:"9663303313", address:"Station road near royal hotel"};
+		document.getElementById("object4").innerHTML = "My father name is " + parents.name + " contact Number  " + parents.contact + " Address " + parents.address;
+	</script>s
+
+	<h1>BMW</h1>
+	<img src="bmw.jpg">
+
+		<h1 id ="object2"></h1>
+
+	<script type="text/javascript">
+		const car = {type:"BMW", model:"2015", color:"Black"};
+		document.getElementById("object2").innerHTML = "Car name is " + car.type + " Brought in the year of  " + car.model + " Car color is  " + car.color;
+	</script>
+
+	<h1>Pulsar220</h1>
+	<img src="220.png">
+
+
+		<h1 id ="object3"></h1>
+
+	<script type="text/javascript">
+		const bike = {type:"pulsar220", model:"2018", color:"Black"};
+		document.getElementById("object3").innerHTML = "Bike name is " + bike.type + " Brought in the year of  " + bike.model + " Bike color is  " + bike.color;
+	</script>
+
+
+	
+
+
+	<p id="object5"></p>
+
+<script>
+// Create an object:
+const person = {
+  firstName: "Shaheed",
+  lastName: "Peerzade",
+  id: 5566,
+  fullName: function() {
+    return this.firstName + " " + this.lastName;
+  }
+};
+
+// Display data from the object:
+document.getElementById("object5").innerHTML = person.fullName();
+</script>
+
+	
+</body>
+</html>
